@@ -1,9 +1,22 @@
-* {
-    box-sizing: border-box;
+@media screen and (max-width: 640px) {
+	table tr td {
+		display: block;
+	}
+	.tbl-header {
+		display: none
+	}
+	td {
+		border-bottom: 2px solid #E0E0E0;
+		/*margin: 5px 0*/
+	}
+	tr {
+		border: 5px solid #E0E0E0
+	}
 }
 
 table {
-	border-collapse: collapse
+	border-collapse: collapse;
+	width: 100%
 }
 
 td {
@@ -43,13 +56,13 @@ tr:nth-child(odd) {
 
 .special-offers {
 	font-family: Arial;
-	font-size: 16px;
+	font-size: 1em;
 	color: #888888
 }
 
 .special-offers-details {
 	font-family: Arial;
-	font-size: 12px;
+	font-size: .8em;
 	color: #888888;
 	padding-top: 5px
 }
