@@ -1,19 +1,32 @@
 @media screen and (max-width: 640px) {
-	table tr td {
+
+	.offers-table tr td {
 		display: block;
 	}
+
 	.tbl-header {
 		display: none
 	}
+
 	td {
 		border-bottom: 2px solid #E0E0E0;
 	}
+
 	tr {
 		border: 5px solid #E0E0E0
 	}
+
+	.mobile-view-tag {
+		height: 70px;
+	}
+
+	.twenty-five-percent-space {
+		margin-top: 22px;
+	}	
+
 }
 
-table {
+.offers-table {
 	border-collapse: collapse;
 	width: 100%
 }
@@ -56,15 +69,41 @@ tr:nth-child(odd) {
 .special-offers {
 	font-family: Arial;
 	font-size: 1em;
-	color: #888888
+	color: #888888;
 }
 
 .twenty-five-percent {
-	border: 2px solid #E0E0E0;
-	padding: 20px 13px 19px 13px;
-	margin-top: -13px;
-	border-radius: 0 0 40px 40px
+	margin-top: -25px;
+	padding-top: 10px;
+	width: 60px;
+	height: 52px;
+	background-color: white;
+    border: 2px solid #E0E0E0;
+	position: relative;
 }
+
+.twenty-five-percent:before {
+	content: '';
+	position: absolute;
+    right: 0;
+	top: 64px;
+	width: 0;
+	height: 0;
+	border: 30px solid transparent;
+	border-top: 12px solid #E0E0E0;
+}
+
+.twenty-five-percent:after {
+	content: '';
+	position: absolute;
+    right: 0;
+	top: 62px;
+	width: 0;
+	height: 0;
+	border: 30px solid transparent;
+	border-top: 12px solid white;
+}
+
 
 .special-offers-details {
 	font-family: Arial;
